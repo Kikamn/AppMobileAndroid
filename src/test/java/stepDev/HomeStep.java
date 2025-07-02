@@ -16,13 +16,13 @@ public class HomeStep {
     public void installTheAppColorNote() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("appium:udid", "emulator-5554"); // Ganti dengan nama device Android Anda (misalnya, "emulator-5554" atau nama perangkat fisik)
-        capabilities.setCapability("appium:noReset", true);
-        capabilities.setCapability("appium:appActivity", "com.socialnmobile.colornote.activity.Main");
-        capabilities.setCapability("appium:appPackage", "com.socialnmobile.dictapps.notepad.color.note");
+        capabilities.setCapability("appium:platformVersion", "15"); // Ganti dengan nama device Android Anda (misalnya, "emulator-5554" atau nama perangkat fisik)
         capabilities.setCapability("appium:automationName", "uiautomator2");
+        capabilities.setCapability("appium:app", "/Users/user/Downloads/ToDo(2).apk");
 
-        driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+
+
+        driver = new AppiumDriver(new URL("http://127.0.0.1:4723/"), capabilities);
     }
 
     @And("Click next button")
