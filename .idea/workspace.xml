@@ -5,23 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfce9d1b-dfe3-43d3-ba97-e6108816c971" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kika/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/feature/note.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/NoteHome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDev/HomeStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/colornote-notepad-4-6-7.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/feature/searchNote.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDev/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDev/SearchStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/feature/note.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/note.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/NoteHome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDev/HomeStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDev/HomeStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/colornote-notepad-4-6-7.apk" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +26,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="automationMobile" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,12 +66,19 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Cucumber Java.Feature: note.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: searchNote.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Add Note.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Search Found and delete permanent.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Search Found and show detail note.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Search Not Found.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build automationMobile.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestRunner.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.automationMobile [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.automationMobile [test].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kika/OneDrive/Desktop/Java/automationMobile/src/test/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kika/OneDrive/Desktop/Java/cobaSauceDemo&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/kika/OneDrive/Desktop/Java/automationMobile/src/main/java/kika/example/Main.java&quot;
   }
 }</component>
@@ -68,16 +86,19 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kika\OneDrive\Desktop\Java\automationMobile\src\test\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kika\OneDrive\Desktop\Java\automationMobile\src\test\resources" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Feature: note" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Search Not Found">
+    <configuration name="Feature: searchNote" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/note.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/searchNote.feature" />
       <option name="GLUE" value="stepDev" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="automationMobile.test" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: note" />
+      <option name="SUGGESTED_NAME" value="Feature: searchNote" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -89,9 +110,97 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: Search Found and delete permanent" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/searchNote.feature" />
+      <option name="GLUE" value="stepDev" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="automationMobile.test" />
+      <option name="NAME_FILTER" value="^Search Found and delete permanent$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search Found and delete permanent$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Search Found and delete permanent" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Search Found and show detail note" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/searchNote.feature" />
+      <option name="GLUE" value="stepDev" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="automationMobile.test" />
+      <option name="NAME_FILTER" value="^Search Found and show detail note$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search Found and show detail note$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Search Found and show detail note" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Search Not Found" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/searchNote.feature" />
+      <option name="GLUE" value="stepDev" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="automationMobile.test" />
+      <option name="NAME_FILTER" value="^Search Not Found$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search Not Found$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Search Not Found" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;runner.TestRunner&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: note" />
+        <item itemvalue="Cucumber Java.Scenario: Search Not Found" />
+        <item itemvalue="Cucumber Java.Feature: searchNote" />
+        <item itemvalue="Cucumber Java.Scenario: Search Found and show detail note" />
+        <item itemvalue="Cucumber Java.Scenario: Search Found and delete permanent" />
+        <item itemvalue="Gradle.TestRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -105,6 +214,17 @@
       <updated>1750736606738</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

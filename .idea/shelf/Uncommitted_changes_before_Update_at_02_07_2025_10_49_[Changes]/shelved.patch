@@ -1,0 +1,112 @@
+Index: src/test/java/stepDev/HomeStep.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package stepDev;\r\n\r\nimport io.appium.java_client.AppiumDriver;\r\nimport io.cucumber.java.en.*;\r\nimport org.openqa.selenium.remote.DesiredCapabilities;\r\n\r\nimport java.net.MalformedURLException;\r\nimport java.net.URL;\r\n\r\n\r\npublic class HomeStep {\r\n\r\n    private static AppiumDriver driver;\r\n\r\n    @Given(\"Install the app color note\")\r\n    public void installTheAppColorNote() throws MalformedURLException {\r\n        DesiredCapabilities capabilities = new DesiredCapabilities();\r\n        capabilities.setCapability(\"platformName\", \"Android\");\r\n        capabilities.setCapability(\"appium:udid\", \"emulator-5554\"); // Ganti dengan nama device Android Anda (misalnya, \"emulator-5554\" atau nama perangkat fisik)\r\n        capabilities.setCapability(\"appium:noReset\", true);\r\n        capabilities.setCapability(\"appium:appActivity\", \"com.socialnmobile.colornote.activity.Main\");\r\n        capabilities.setCapability(\"appium:appPackage\", \"com.socialnmobile.dictapps.notepad.color.note\");\r\n        capabilities.setCapability(\"appium:automationName\", \"uiautomator2\");\r\n\r\n        driver = new AppiumDriver(new URL(\"http://127.0.0.1:4723/wd/hub\"), capabilities);\r\n    }\r\n\r\n    @And(\"Click next button\")\r\n    public void clickNextButton() {\r\n    }\r\n\r\n    @And(\"Click permisson button\")\r\n    public void clickPermissonButton() {\r\n    }\r\n\r\n    @And(\"Click skip button\")\r\n    public void clickSkipButton() {\r\n    }\r\n\r\n    @Given(\"The color is opened\")\r\n    public void theColorIsOpened() {\r\n    }\r\n\r\n\r\n    @When(\"I Click add buttton\")\r\n    public void iClickAddButtton() {\r\n    }\r\n\r\n    @And(\"I add task {string}\")\r\n    public void iAddTask(String tittle) {\r\n    }\r\n\r\n    @Then(\"The task {string} is displayed\")\r\n    public void theTaskIsDisplayed(String tittleDisplay) {\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/stepDev/HomeStep.java b/src/test/java/stepDev/HomeStep.java
+--- a/src/test/java/stepDev/HomeStep.java	(revision c0933efd224177fe8349b7b90f6cabb06340b586)
++++ b/src/test/java/stepDev/HomeStep.java	(date 1751423565197)
+@@ -16,13 +16,15 @@
+     public void installTheAppColorNote() throws MalformedURLException {
+         DesiredCapabilities capabilities = new DesiredCapabilities();
+         capabilities.setCapability("platformName", "Android");
+-        capabilities.setCapability("appium:udid", "emulator-5554"); // Ganti dengan nama device Android Anda (misalnya, "emulator-5554" atau nama perangkat fisik)
++        capabilities.setCapability("appium:androidName", "emulator-5554"); // Ganti dengan nama device Android Anda (misalnya, "emulator-5554" atau nama perangkat fisik)
+         capabilities.setCapability("appium:noReset", true);
+-        capabilities.setCapability("appium:appActivity", "com.socialnmobile.colornote.activity.Main");
+-        capabilities.setCapability("appium:appPackage", "com.socialnmobile.dictapps.notepad.color.note");
++        capabilities.setCapability("appium:appActivity", "com.splendapps.splendo.MainActivity");
++        capabilities.setCapability("appium:appPackage", "com.splendapps.splendo");
+         capabilities.setCapability("appium:automationName", "uiautomator2");
++        capabilities.setCapability("appium:app", "C:Users/kika/OneDrive/Desktop/Java/automationMobile/src/test/resources/ToDo (1).apk");
+ 
+-        driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
++        driver = new AppiumDriver(new URL("http://127.0.0.1:4723/"), capabilities);
++
+     }
+ 
+     @And("Click next button")
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"dfce9d1b-dfe3-43d3-ba97-e6108816c971\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/gradle.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/build.gradle\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/gradlew\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/gradlew.bat\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/settings.gradle\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/kika/example/Main.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/feature/note.feature\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/pages/HomePage.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/pages/NoteHome.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/stepDev/HomeStep.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/resources/colornote-notepad-4-6-7.apk\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 0\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2ywDBDrzgcKLBj51mplqxJA79LK\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Cucumber Java.Feature: note.executor&quot;: &quot;Run&quot;,\r\n    &quot;Gradle.Build automationMobile.executor&quot;: &quot;Run&quot;,\r\n    &quot;Gradle.automationMobile [:Main.main()].executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/kika/OneDrive/Desktop/Java/automationMobile/src/test/resources&quot;,\r\n    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/kika/OneDrive/Desktop/Java/automationMobile/src/main/java/kika/example/Main.java&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\kika\\OneDrive\\Desktop\\Java\\automationMobile\\src\\test\\resources\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Feature: note\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/java/feature/note.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDev\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"automationMobile.test\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Feature: note\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Cucumber Java.Feature: note\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"dfce9d1b-dfe3-43d3-ba97-e6108816c971\" name=\"Changes\" comment=\"\" />\r\n      <created>1750736606738</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1750736606738</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/kika/example/Main.java</url>\r\n          <line>13</line>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision c0933efd224177fe8349b7b90f6cabb06340b586)
++++ b/.idea/workspace.xml	(date 1751428013829)
+@@ -5,23 +5,10 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="dfce9d1b-dfe3-43d3-ba97-e6108816c971" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/kika/example/Main.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/feature/note.feature" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/NoteHome.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDev/HomeStep.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/resources/colornote-notepad-4-6-7.apk" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/resources/ToDo (1).apk" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/stepDev/HomeStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDev/HomeStep.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/colornote-notepad-4-6-7.apk" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -33,6 +20,23 @@
+       <ProjectState />
+     </projectState>
+   </component>
++  <component name="ExternalProjectsManager">
++    <system id="GRADLE">
++      <state>
++        <projects_view>
++          <tree_state>
++            <expand>
++              <path>
++                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
++                <item name="automationMobile" type="f1a62948:ProjectNode" />
++              </path>
++            </expand>
++            <select />
++          </tree_state>
++        </projects_view>
++      </state>
++    </system>
++  </component>
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
+@@ -58,14 +62,17 @@
+     &quot;Gradle.Build automationMobile.executor&quot;: &quot;Run&quot;,
+     &quot;Gradle.automationMobile [:Main.main()].executor&quot;: &quot;Run&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kika/OneDrive/Desktop/Java/automationMobile/src/test/resources&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/kika/OneDrive/Desktop/BRI/AppMobileAndroid&quot;,
+     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/kika/OneDrive/Desktop/Java/automationMobile/src/main/java/kika/example/Main.java&quot;
+   }
+ }</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\kika\OneDrive\Desktop\Java\automationMobile\src\test\resources" />
++    </key>
++    <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\kika\OneDrive\Desktop\Java\automationMobile\src\test\resources" />
+     </key>
+   </component>
